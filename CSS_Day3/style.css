@@ -1,0 +1,104 @@
+/*Container for the whole body*/
+#wrapper {	
+	margin: auto;
+	background-image: linear-gradient(#EB198D,#93BEE6);	
+	width: 800px;
+	height: 900px;
+}
+
+/*header together :) */
+.header {
+	width: 800px;
+	height: 100px;
+	background-image: url('https://cdn.pixabay.com/photo/2020/05/18/05/38/background-5184604_1280.png')	
+}
+
+h2 {
+	text-align: center;
+	padding-top: 20px;
+	color: #FFFFFF;
+	text-shadow: 2px -5px 10px #E68AE7;
+}
+/*header finish*/
+
+/*container for flexbox-beginning*/
+#container {	
+	display: flex;
+	justify-content: space-around;
+	flex-flow: column;
+	background-image: url('https://cdn.pixabay.com/photo/2020/05/17/06/31/abandoned-places-5180254_1280.jpg');
+	background-position: center;
+	width: 80%;
+	height:  80%;
+	margin: auto;		
+}
+ /*styling for all div´s*/
+div[class*="box"] {
+	width: 80px;
+	height: 80px;
+	border: 2px solid #FFFFFF;	
+	transition-property: width, height;
+	transition-duration: 8ms;
+	transition-delay: 2ms;
+	transition-timing-function: linear;
+	text-align: center;
+	overflow: hidden;
+	margin: auto;	
+}
+/*styling for all div´s-end*/
+
+/*start transformation by :hover*/
+.box1:hover {
+	position: relative;
+	transform: skewX(20deg);
+	transform: rotate(5deg);
+	transform: translateX(10px);
+	border: 3px solid #B43F3F;
+	background-color: #68FD3B;	 
+}
+
+
+.box2:hover {
+	transform: skewY(20deg);
+	transform: rotate(15deg);
+	transform: translateY(8px);
+	border: 3px dotted #F55880;
+	background-color: #23E6F2;	 
+}
+
+.box3:hover {
+	transform: skewX(20deg);	
+	transform: rotateZ(23deg);
+	border: 3px solid #23E6F2;
+	background-color: #FE7304;	 
+}
+
+.box4:hover {
+	transform: skewX(20deg);
+	transform: rotate(5deg);
+	transform: scale(2,3);
+	border: 7px double #FF3803;
+	background-color: #6AEB9A;	 
+}
+
+.box5:hover {
+	transform: skewY(20deg);
+	transform: rotate(80deg);
+	transform: rotateZ(15deg);
+	transform: translateY(10px);
+	border: 3px solid #2CCA67;
+	background-color: #D4BD24;	 
+}
+/*styling transformition by :hover -end*/
+
+/*styling for all a-tags*/
+a {
+	text-decoration: none;
+	color: #3F8DD9;
+	font-weight: bold;
+	font-size: 15px;
+	color: #FFFFFF;
+}
+/*styling for a-tags end*/
+
+
